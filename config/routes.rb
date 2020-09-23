@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'application#home'
 
   get '/login' => 'sessions#new'
-  get '/show' => 'secrects#show'
-  post '/login' => 'sessions#new'
+  get '/secret' => 'secrects#show'
+  post '/login' => 'sessions#create'
   post '/login' => 'sessions#destroy'
 end
